@@ -1,0 +1,345 @@
+@media screen and (max-width:950px) {
+    .section-container {
+
+        overflow: hidden;
+    }
+    section{
+        overflow: hidden;
+    }
+    body{
+        font-size: 14px;
+    }
+    .menu>.book-online {
+        background: var(--white-color);
+        color: var(--yellow-color);
+    }
+    .menu>.book-online:hover{
+        background: var(--yellow-color);
+        color: var(--white-color);
+    }
+    #page1{
+        height: 90vh;
+        overflow: hidden;
+    }
+    .nav-bar {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: var(--yellow-color);
+        transition: all .5s;
+        height: 100vh;
+        overflow: hidden;
+        width: 0;
+    }
+    .menu-bar {
+        flex-direction: column;
+        padding: 0;
+    }
+    .menu{
+        padding: 5px 10px;
+        border-top: 1px solid rgba(139, 136, 136, 0.555);
+        display: flex;
+        justify-content: center;
+    }
+    .menu .hoverable-menu{
+        color: var(--dark-primary-color);
+        font-size: 1.1em;
+    }
+    .menu:hover{
+        color: black;
+        background-color: var(--white-color);
+    }
+    .burger{
+        color: white;
+        font-size: 1.5em;
+        display: block;
+    }
+    .cross-menu{
+        display: block;
+        text-align: right;
+        font-size: 1.8em;
+        padding: 10px 1.5em;
+    }
+    #page1 h1{
+        font-size: 3.5em;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    .about-content:nth-child(2)>img{
+        width: 100%;
+        height: 70%;
+    }
+    .services-boxes{
+        width: 48%;
+    }
+    .room-division{
+        width: 100%;
+    }
+    .order-img{
+        order: 5;
+    }
+}
+/* max-width 768px...................................................... */
+@media screen and (max-width:800px) {
+    :root{
+        --yellow-color: #f4aa20;
+        --secondary-background-color: #c2f4dc;
+    }
+    .section-container {
+
+        overflow: hidden;
+    }
+    section{
+        overflow: hidden;
+    }
+    .sign_in_subheader{
+        background-color: var(--yellow-color);
+        border-radius: 10px;
+        align-items: center;
+        font-size: 10px;
+    }
+    body{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:769px) {
+    body{
+        font-size: 12px;
+    }
+    #page1 h1{
+        font-size: 3.5em;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    .about-us-main{
+        flex-direction: column;
+        gap: 1em;
+        width: 95%;
+        margin: auto;
+        
+    }
+    .about-content:nth-child(1){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .faculties{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .fac{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2em;
+    }
+    .about-content:nth-child(2){
+        width: 100%;
+        height: 90;
+    }
+    .room-division{
+        width: 100%;
+    }
+    .order-img{
+        order: 5;
+    }
+    .services-box{
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .services-boxes{
+        width: 100%;
+        min-height: 250px;
+    }
+    .food{
+        width: 50%;
+    }
+    
+    .footer{
+        flex-wrap: wrap;
+        font-size: 14px;
+        justify-content: space-between;
+    }
+    .footer_division{
+        width: 33%;
+    }
+    .subfooter{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .fac{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2em;
+    }
+    .contact-subheader{
+        display: none;
+    }
+    .responsive-subheader{
+        display: block;
+        display: flex;
+    }
+}
+/* max-width 576px...................................................... */
+@media screen and (max-width:576px) {
+    .section-container {
+
+        overflow: hidden;
+    }
+    section{
+        overflow: hidden;
+    }
+    .faculties{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .about-content:nth-child(2){
+        width: 100%;
+        height: 90;
+    }
+    .room-division{
+        width: 100%;
+        flex-direction: column;
+    }
+    .room-division-2{
+        width: 100%;
+    }
+    .order-img{
+        order: -1;
+    }
+    .order-img2{
+        order: 5;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_division{
+        width: 80%;
+    }
+}
+
+/* max-width 500px...................................................... */
+@media screen and (max-width:500px) {
+    .section-container {
+
+        overflow: hidden;
+    }
+    section{
+        overflow: hidden;
+    }
+    .responsive-gmail{
+        border-radius: 10px;
+        padding: 6px 30px;
+        background-color: var(--yellow-color);
+        transition: all .4s;
+        color: var(--white-color);
+    }
+    .subHeader{
+        width: 100%;
+        padding-inline: 10px;
+        font-size: 10px;
+        gap: 10px;
+    }
+    .mainHeader{
+        padding-inline:20px;
+    }
+    section{
+        padding-block: 20px;
+    }
+    .section-container{
+        padding-inline:20px;
+}
+.about-us-main{
+    width: 100%;
+    padding: 30px 10px;
+}
+.services{
+    padding: 5px;
+    width: 100%;
+}
+.heading1-white{
+    font-size: 15px;
+}
+section{
+    padding-block: 10px;
+}
+#page1 h1{
+    font-size: 2em;
+}
+#page1 .heading4-white{
+    letter-spacing: 2px;
+    text-shadow : 1px 2px 50px rgb(220, 215, 215);
+    font-size: 1.5em;
+}
+.heading-yellow{
+    font-size: 2em;
+    gap: 5px;
+}
+#page1 .scrolltrigger{
+    font-size: 1em;
+}
+.content{
+    background-color: var(--secondary-background-color);
+}
+.food{
+    width: 100%;
+}
+.primary-btn{
+    width: 90%;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.checkButtons{
+    width: 100%;
+    border-radius: 10px;
+}
+.sec8_main{
+    padding: 10px;
+}
+.signin_signout{
+    gap: 1em;
+    flex-direction: column;
+}
+.sign_in_subheader{
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    align-items: center;
+    font-size: 10px;
+}
+.responsive-gmail {
+    padding: 7px 20px;
+}
+}
+@media screen and (max-width:350px) {
+    .section-container {
+
+        overflow: hidden;
+    }
+    section{
+        overflow: hidden;
+    }
+    .responsive-gmail {
+        padding: 7px 15px;
+    }
+    .subHeader .sub-header-title{
+        letter-spacing: 0px;
+    }
+    .sign_in_subheader {
+        padding: 5px 10px;
+    }
+}

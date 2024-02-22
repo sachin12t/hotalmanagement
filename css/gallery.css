@@ -1,0 +1,146 @@
+:root{
+  --primary-background-color:rgb(247, 237, 220);
+  --secondary-background-color: #f1ebe2;
+  --primary-color:#858a99;
+  --dark-primary-color:#535455;
+  --letter-spacing: .5px;
+  --yellow-color: #f1b64a;
+  --font-greate-vibes: 'Great Vibes', cursive;
+  --font-crimson-text: 'Crimson Text', serif;
+  --font-poppins-text: poppins;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.Nav{
+  min-height: 180px;
+  width:100%;
+  background:var(--secondary-background-color);
+}
+.contain{
+  min-height: 180px;
+  width:85%;
+  margin:0px auto;
+}
+.Nav .contain h1{
+  font-size:2.2rem;
+  line-height:3rem;
+  padding:2.5rem 3rem 0px; 
+  color:var(--yellow-color);
+}
+.breadcrumb-item{
+  padding-left:2.8rem;
+}
+.breadcrumb-item .anchor{
+  text-decoration:none;
+ 
+}
+/* End First Section*/
+#gallery {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+.img-wrapper {
+  position: relative;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.img-wrapper img {
+  width: 100%;
+  border-radius: 10px;
+}
+.img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  border-radius:10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.img-overlay i {
+  color: #fff;
+  font-size: 3em;
+}
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+ /* Removes blue highlight */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#overlay img {
+  margin: 0;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  padding: 5%;
+}
+@media screen and (min-width: 768px) {
+  #overlay img {
+    width: 60%;
+ }
+}
+@media screen and (min-width: 1200px) {
+  #overlay img {
+    width: 50%;
+ }
+}
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#nextButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #nextButton {
+    font-size: 3em;
+ }
+}
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#prevButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #prevButton {
+    font-size: 3em;
+ }
+}
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#exitButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #exitButton {
+    font-size: 3em;
+ }
+}

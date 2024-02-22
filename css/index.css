@@ -1,0 +1,1060 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    color-scheme: dark;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: var(--yellow-color); 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a31010; 
+  }
+
+*::selection {
+    color: var(--yellow-color);
+    background-color: rgba(0, 0, 0,);
+}
+
+:root {
+    --primary-background-color: rgb(233, 230, 228);
+    --secondary-background-color: #fff2a3;
+    --third-background-color: rgb(236, 229, 223);
+    --primary-color: #5b5b5b;
+    --dark-primary-color: #3f3f40;
+    --black-heading-color: rgba(0, 0, 0, 0.91);
+    --white-color: #f7f3ed;
+    --letter-spacing: .5px;
+    --yellow-color: #f1b64a;
+    --font-greate-vibes: 'Great Vibes', cursive;
+    --font-crimson-text: 'Crimson Text', serif;
+    --font-poppins-text: poppins;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--white-color);
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: .2px;
+    position: relative;
+    left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* formate of data */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: var(--black-heading-color);
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.2em;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-size: 1.7em;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+h5 {
+    font-size: 1.3em;
+    line-height: 1.1em;
+}
+
+h6 {
+    font-size: 1.1em;
+    line-height: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+.heading1-white {
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.heading4-white {
+    color: var(--white-color);
+}
+
+.heading-black {
+    color: var(--black-heading-color);
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    font-size: 2.1em;
+    padding-block: .5em;
+}
+
+.heading-yellow {
+    color: var(--yellow-color);
+    font-family: 'Great Vibes', cursive;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+.horable-heading-yellow {
+    color: var(--yellow-color);
+    font-family: var(--font-crimson-text);
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.primary-paragraph {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    font-family: poppins;
+}
+
+.secondary-paragraph {
+    font-size: 1.1em;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    font-family: poppins;
+}
+
+.primary-btn {
+    margin-top: 1.5em;
+    background: var(--yellow-color);
+    color: var(--white-color);
+    padding: 10px 15px;
+    transition: all .4s;
+    border-radius: 10px;
+}
+
+.primary-btn:hover {
+    color: var(--yellow-color);
+    background-color: var(--white-color);
+    box-shadow: 0 0 5px var(--black-heading-color);
+    border-radius: 10px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+/* formate of section data */
+.section-container {
+    padding: 50px;
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+div.popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    display: none;
+}
+div.popup-container div.popup{
+    background-color: var(--primary-background-color);
+    padding: 20px 50px;
+    width: 35em;
+    box-shadow: 0 0 10px rgb(98, 95, 95);
+    border-radius: 5px;
+}
+div.popup-container div.popup h2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;    
+    color: var(--yellow-color);
+}
+div.popup-container div.popup h2 span{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--dark-primary-color);
+    cursor: pointer;
+}
+div.popup-container div.popup .login-input{
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid var(--yellow-color);
+    margin-bottom: 1.3em;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+div.popup-container div.popup .login-btn{
+    font-weight: 550;
+    border: none;
+    outline: none;
+    background-color: var(--yellow-color);
+    color: white;
+    padding: 5px 15px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+/* sub header willl be started here */
+.subHeader {
+    width: 100%;
+    padding:.3em 3em;
+    justify-content: space-between;
+    background: var(--secondary-background-color);
+    align-items: center;
+    position: sticky;
+    z-index: 12346;
+    transition: all .3s;
+}
+
+.contact-subheader {
+    gap: 1.5em;
+}
+
+.mob {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: .9em;
+    align-items: center;
+    gap: 5px;
+}
+
+.mob>i {
+    font-size: 1em;
+
+}
+
+.responsive-subheader {
+    display: none;
+    gap: 5px;
+    font-size: 1.3em;
+}
+
+.responsive-gmail {
+    border-radius: 10px;
+    padding: 5px 30px;
+    background-color: var(--yellow-color);
+    transition: all .4s;
+    color: var(--white-color);
+}
+
+.responsive-gmail:hover {
+    opacity: .8;
+    box-shadow: 0 0 5px black;
+    color: var(--yellow-color);
+    background-color: var(--white-color);
+}
+
+.sign_in_subheader {
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all .3s;
+}
+.sign_in_subheader:hover{
+    background: var(--white-color);
+    color: var(--yellow-color);
+    box-shadow: 0 0 10px rgba(157, 153, 153, 0.37);
+}
+
+/* main header will be started here */
+.mainHeader {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:.8em 3em 0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all .3s;
+    background-color: rgba(0, 0, 0, 0.235);
+}
+
+.logo>a>img {
+    width: 15em;
+    object-fit: cover;
+}
+
+.cross-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.crossy {
+    transform: rotate(-180deg);
+    transition: all .3s;
+}
+
+.crossy:hover {
+    transform: rotate(0);
+    color: var(--white-color);
+}
+
+.menu>.hoverable-menu {
+    padding: 9px 15px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: .85em;
+    color: var(--white-color);
+    letter-spacing: var(--letter-spacing);
+    transition: all .3s;
+}
+
+.menu>.hoverable-menu:hover {
+    color: var(--yellow-color);
+}
+
+.menu>.book-online {
+    background: var(--yellow-color);
+    color: var(--white-color);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 10px;
+    padding-block: 10px;
+    font-size: .9em;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.menu>.book-online:hover {
+    background: var(--white-color);
+    color: var(--yellow-color);
+    box-shadow: 0 0 10px rgba(157, 153, 153, 0.37);
+}
+
+.burger {
+    color: var(--white-color);
+    font-size: 1.5em;
+    display: none;
+    cursor: pointer;
+}
+
+/* section 1 will be stated here */
+.hero-bg {
+    object-fit: cover;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    filter: blur(1px);
+}
+
+.video-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    z-index: -1;
+
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    justify-content: center;
+    gap: 1em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#page1 h1 {
+    font-size: 4em;
+    position: relative;
+    font-family: var(--font-greate-vibes);
+    letter-spacing: 3px;
+}
+
+#page1 h1::before {
+    content: "Welcome To The Ramayana Hotel";
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    z-index: -1;
+    -webkit-text-stroke: 2px var(--yellow-color);
+}
+
+#page1 .heading4-white {
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 50px rgb(220, 215, 215);
+}
+
+/* page2 will be started here...................................... */
+#page2 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.about-us-main {
+    box-shadow: 0 0 10px rgba(157, 153, 153, 0.37);
+    padding: 50px;
+    background-color: var(--secondary-background-color);
+
+}
+
+.heading-yellow {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.heading-yellow>img {
+    object-fit: cover;
+    height: 45px;
+}
+
+.about-us-main {
+    justify-content: space-between;
+}
+
+.about-content:nth-child(1) {
+    width: 55%;
+}
+
+.about-content:nth-child(2) {
+    width: 40%;
+}
+
+.about-content:nth-child(2)>img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.faculties {
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.fac {
+    width: 45%;
+}
+
+/* section 3 will be started here */
+.section-3 {
+    background: var(--primary-background-color);
+    align-items: center;
+    flex-direction: column;
+    padding-block: 50px;
+}
+
+.rooms {
+    flex-wrap: wrap;
+}
+
+.room-division {
+    width: 50%;
+}
+
+.checkButtons {
+    padding: 10px 15px;
+    color: var(--black-heading-color);
+    transition: all .4s;
+    border-radius: 10px;
+}
+
+.room-division:hover .checkButtons {
+    background-color: var(--black-heading-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.room-division-2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.room-division-2>span {
+    display: inline-block;
+    height: 60%;
+    width: 80%;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    transition: all .4s;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--black-heading-color);
+}
+
+.room-division-2:hover span {
+    top: 25%;
+}
+
+.padding {
+    padding: 10px;
+}
+
+.room-division-2>img {
+    width: 100%;
+}
+
+/* section 4 will be started here............................................... */
+.section4 {
+    background: var(--secondary-background-color);
+    padding-block: 50px;
+    width: 100%;
+}
+
+.services {
+    background-color: var(--primary-background-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(157, 153, 153, 0.37);
+    width: 100%;
+}
+
+.services-box {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.services-boxes {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .8em;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(157, 153, 153, 0.37);
+    margin-top: 1.5em;
+    position: relative;
+    perspective: 700px;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+.service-yeallow {
+    color: var(--yellow-color);
+    font-weight: 600;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(0);
+    transition: all .3s;
+    background-color: var(--secondary-background-color);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-boxes:hover .content {
+    transform: rotateY(90deg);
+}
+
+.img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-90deg);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.services-boxes:hover .img-box {
+    transform: rotateY(0);
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* section 5 will be started here.............................................. */
+.section5 {
+    background-color: var(--primary-background-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 50px;
+}
+
+.images {
+    width: 100%;
+}
+
+.imagesin {
+    width: 25%;
+    height: 270px;
+    transition: all .2s;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagesin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(.09px) brightness(90%);
+}
+
+.imagesin:hover {
+    filter: brightness(80%);
+    box-shadow: 0 0 10px 1px rgb(124, 121, 121);
+    transform: translateY(-10px);
+}
+
+.imagesin>span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    background-color: rgba(0, 0, 0, 0.411);
+    transform: scale(0);
+    transition: all .3s;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.imagesin:hover span {
+    transform: scale(1);
+}
+
+.gap {
+    height: 100vh;
+    width: 100%;
+    background: url(../images/backgroundatach.jpg);
+    background-attachment: fixed;
+    background-color: #df9883b9;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+
+/* section 6 will be started here hotel-food */
+.section6 {
+    background-color: var(--primary-background-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 0 10px rgba(157, 153, 153, 0.37); */
+    padding-block: 20px;
+}
+
+.food {
+    width: 33.33333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.food>img {
+    width: 100%;
+    height: 100%;
+}
+
+.checkButtons {
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: var(--yellow-color);
+}
+
+.checkButtons:hover {
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+}
+
+/* section 7 will be started here */
+.section-7 {
+    background-color: var(--secondary-background-color);
+}
+
+.room-division-2 .sec7social {
+    display: inline-block;
+    height: 28%;
+    width: 80%;
+
+}
+
+.room-division-2:hover .sec7social {
+    top: 50%;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social .itag {
+    background: black;
+    width: 25px;
+    height: 15px;
+    padding-block: 5px;
+    font-size: 1.2em;
+    color: var(--white-color);
+    transition: all .3s;
+}
+
+.social .itag:hover {
+    background-color: var(--yellow-color);
+    color: black;
+}
+
+/* section 8th will be strted here */
+.section8 {
+    padding-block: 50px;
+    background-color: var(--primary-background-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.sec8_main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-background-color);
+    width: 100%;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(157, 153, 153, 0.37);
+    gap: 20px;
+}
+
+.sec8_main form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.input_mail {
+    width: 90%;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.submit_mail {
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--yellow-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .4s;
+    border-radius: 10px;
+    color: black;
+}
+
+.submit_mail:hover {
+    background-color: black;
+    color: var(--white-color);
+}
+
+/* footer will be started here */
+footer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--primary-background-color);
+    justify-content: space-between;
+}
+
+.footer_division {
+    justify-self: center;
+    width: 25%;
+}
+
+.footer_division img {
+    width: 70%;
+    object-fit: cover;
+}
+
+.footer_heading {
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 1em;
+}
+
+.footer_ul li {
+    list-style-type: disc;
+    padding-block: 5px;
+}
+
+.footer_ul .list_none {
+    list-style: none !important;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.loacation-footer {
+    padding-top: .9em;
+}
+
+.subfooter {
+    background-color: var(--white-color);
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    gap: 10px;
+}
+
+.sub-division {
+    gap: 15px;
+    align-items: center;
+}
+
+.sub-division .sub_social {
+    width: 35px;
+    padding-block: 7px;
+    background-color: var(--primary-background-color);
+    color: var(--black-heading-color);
+    border-radius: 5px;
+    transition: all .3s;
+    box-shadow: 0 0 5px 1px rgba(157, 153, 153, 0.37);
+}
+
+.sub-division .sub_social:hover {
+    background-color: var(--yellow-color);
+    box-shadow: 0 0 10px 1PX rgba(210, 204, 204, 0.37);
+}
+
+/* contact us css started here */
+.page {
+    padding: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+input,textarea{
+    background-color: transparent;
+}
+.container_contact_us{
+
+    min-height: 500px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.contact{
+    min-height: 500px;
+    width: 55%;
+
+}
+.contact h1{
+    color: #e65107;
+
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+.contact .contactinput{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(222, 124, 26);
+    padding: 20px;
+    display: block;
+    width: 100%;
+}
+.textarea1{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(222, 124, 26);
+    padding: 20px;
+    resize: none;
+    width: 100%;
+}
+.submit_btn{
+    width: fit-content;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    margin-top: 1em;
+    transition: all .3s;
+    font-weight: 600;
+    color: white;
+}
+.submit_btn:hover{
+    color: white;
+    background-color: #e65107;
+}
+.get {
+    width: 35%;
+    background-color: var(--secondary-background-color);
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.get h1{
+    text-align: center;
+    font-weight:bold;
+
+}
+.get h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--yellow-color);   
+    padding-block: 5px; 
+}
+.social{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.social .contact-social{
+    color: white;
+    padding: 5px 10px;
+    background-color: var(--yellow-color);
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: all .2s;
+}
+.social .contact-social:hover{
+    color: white;
+    background-color: #e65107;
+}
+@media (max-width:768px){
+    .contact{
+    width:100%;
+    text-align: center;
+	padding-bottom:150px;
+    }
+    .get{
+        width:100%;
+        text-align: center;
+        } 
+       
+        input[type="submit"] {
+            display: flex;
+            justify-content: center;
+        }
+}
+
